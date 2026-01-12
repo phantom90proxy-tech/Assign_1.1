@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Music Playlist</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="landing-wrapper">
+      <header>
+        <h2 class="center-title">MY FAVORITE SONGS</h2>
+      </header>
+
+      <div class="content-box">
+        <div class="text-box">
+          <ul class="playlist" aria-label="playlist">
+            <li
+              class="playlist-item"
+              data-src="assets/Sway to My Beat in Cosmos - Honkai_ Star Rail 22 OST.mp3"
+              data-color="#bca8e2, #d09efe"
+            >
+              <img src="assets/INSIDE.webp" alt="" />
+              <div class="track-meta">
+                <div class="title">Sway to My Beat in Cosmos</div>
+                <div class="artist">Chevy</div>
+              </div>
+              <button
+                class="icon-btn play-track"
+                aria-label="play track 1"
+                title="Play"
+              >
+                ▶
+              </button>
+            </li>
+
+            <li
+              class="playlist-item"
+              data-src="assets/Hope Is the Thing With Feathers - Honkai_ Star Rail OST.mp3"
+              data-color="#bca8e2,#d09efe"
+            >
+              <img src="assets/INSIDE.webp" alt="" />
+              <div class="track-meta">
+                <div class="title">Hope Is the Thing With Feathers</div>
+                <div class="artist">Chevy</div>
+              </div>
+              <button
+                class="icon-btn play-track"
+                aria-label="play track 2"
+                title="Play"
+              >
+                ▶
+              </button>
+            </li>
+
+            <li
+              class="playlist-item"
+              data-src="assets/i dont wanna - snuffles.mp3"
+              data-color="#3ddc84,#ff8b3d"
+            >
+              <img src="assets/snuffles.jpg" alt="" />
+              <div class="track-meta">
+                <div class="title">I Don't Wanna</div>
+                <div class="artist">Snuffles</div>
+              </div>
+              <button
+                class="icon-btn play-track"
+                aria-label="play track 3"
+                title="Play"
+              >
+                ▶
+              </button>
+            </li>
+
+            <li
+              class="playlist-item"
+              data-src="assets/TruE.mp3"
+              data-color="#ff79c6"
+            >
+              <img src="assets/TruE.jpg" alt="" />
+              <div class="track-meta">
+                <div class="title">TruE</div>
+                <div class="artist">HOYO-MIX</div>
+              </div>
+              <button
+                class="icon-btn play-track"
+                aria-label="play track 4"
+                title="Play"
+              >
+                ▶
+              </button>
+            </li>
+
+            <li
+              class="playlist-item"
+              data-src="assets/Ripples of Past Reverie English Version - Honkai_ Star Rail 37 OST.mp3"
+              data-color="#ff79c6"
+            >
+              <img src="assets/Ripples_of_Past_Reverie.webp" alt="" />
+              <div class="track-meta">
+                <div class="title">Ripples of Past Reverie</div>
+                <div class="artist">HOYO-MIX</div>
+              </div>
+              <button
+                class="icon-btn play-track"
+                aria-label="play track 4"
+                title="Play"
+              >
+                ▶
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="image-box">
+          <div class="cover-wrap">
+            <img src="assets/INSIDE.webp" alt="artist" />
+          </div>
+
+          <div class="track-info" aria-label="current track">
+            <h4 class="song-title">Sway to My Beat in Cosmos</h4>
+            <p class="artist">Chevy</p>
+          </div>
+
+          <div class="player-controls" aria-label="player controls">
+            <div class="controls-row"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- add hidden audio element (id must match player.js) -->
+    <audio id="audio-player" preload="metadata"></audio>
+
+    <!-- load player script -->
+    <script src="player.js" defer></script>
+  </body>
+</html>
